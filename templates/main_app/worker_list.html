@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+  Workers
+{% endblock %}
+
+{% block content %}
+  <h1>Workers</h1>
+
+  {% for worker in worker_list %}
+    {{ worker.username }}
+  {% endfor %}
+
+{% endblock %}

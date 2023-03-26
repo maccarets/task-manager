@@ -1,8 +1,9 @@
-<ul>
-  <li><a href="#">login</a></li>
+<ul class="list-group">
+  <li class="list-group-item"><a href="#">login</a></li>
   <br>
-  <li><a href="#">Tasks</a></li>
-  <li><a href="#">Workers</a></li>
-  <li><a href="#">Task Types</a></li>
-  <li><a href="#">position</a></li>
+  <li class="list-group-item"><a href="{% url "main_app:index" %}">Home</a></li>
+  <li class="list-group-item"><a href="{% url "main_app:task-list" %}">Tasks</a></li>
+  <li class="list-group-item"><a href="{% url "main_app:worker-list" %}"">Workers</a></li>
+  <li class="list-group-item"><a href="#">Task Types</a></li>
+  <li class="list-group-item"><a href="#">position</a></li>
 </ul>
